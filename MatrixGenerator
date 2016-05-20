@@ -1,0 +1,17 @@
+#Matrix Generator
+#n m -> n x m size matrix
+#a b -> range int in range a to b
+
+import random
+n,m = input().split()
+a,b = input().split()
+a = int(a)
+b = int(b)
+n = int(n)
+m = int(m)
+print (n,m)
+for i in range(n):
+    s = ""
+    for j in range(m):
+        s += str(random.randint(a,b+1)) + " "
+    print (s)
